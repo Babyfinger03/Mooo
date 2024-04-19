@@ -12,10 +12,12 @@ const factText = document.getElementById("fact-text");
 function displayFacts() {
   let index = 0;
   factText.textContent = facts[index]; // Set initial text
-  setInterval(() => {
-      index = (index + 1) % facts.length;
-      factText.textContent = facts[index]; // Update text content with next fact
-  }, 5000); // Change fact every 5 seconds
+  const changeFact = () => {
+    index = (index + 1) % facts.length;
+    factText.textContent = facts[index]; // Update text content with next fact
+  };
+  changeFact(); // Initial call
+  setInterval(changeFact, 5000); // Change fact every 5 seconds
 }
 
 // Call displayFacts function
