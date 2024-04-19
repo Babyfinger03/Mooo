@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mooo Types</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('cow5.png');
+            background-size: cover;
+            background-position: center;
+        }
+
+        
+
+        .go-back {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: #007bff; /* Button background color */
+            color: #fff; /* Button text color */
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .cow {
+            margin: 20px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+            border-radius: 5px;
+            color: #fff;
+        }
+
+        .cow img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <button class="go-back" onclick="goBack()">Go Back</button>
+
+    <div class="container">
+        <h1 style="text-align: center;">Mooo Types</h1>
+        
+        <div class="cow">
+            <h2>Gir</h2>
+            <img src="gir.png" alt="Gir">
+            <p>Other names for this breed include Desan, Kathiawari, Sorthi, Bhadawari, Gujarati, and Surati. Originating in the Gir woods of South Kathiawar, Gujarat; also distributed in nearby Rajasthan and Maharashtra. Basic skin tones include white with areas of dark red or chocolate-brown, or even black or pure red. The unusual curvature of the horns gives them a "half moon" look. A lactation yields between 1200 and 1800 kg of milk. This breed is renowned for being resilient to illness.</p>
+        </div>
+
+        <div class="cow">
+            <h2>Bargur</h2>
+            <img src="bargur.png" alt="Bargur">
+            <p>Discovered in the vicinity of Bargur hills in Bhavani taluk, Erode district, Tamil Nadu. Designed to operate in undulating, mountainous environments. Brown in color with white patterns on it. Animals are medium in size, compact, and well-built. Renowned for their stamina and quickness when trotting. Cautious in behavior and has a tendency to avoid new people.</p>
+        </div>
+
+        <div class="cow">
+            <h2>Khillari</h2>
+            <img src="khillari.png" alt="Khillari">
+            <p>Originated in the Maharashtra districts of Sitapur and Sholapur. Quite similar to the Hallikar breed. White-grey in hue. The long horns twist in an unusual way forward. Usually black, the horns can occasionally have a pink tint. Bullocks are strong and swift.</p>
+        </div>
+
+        <div class="cow">
+            <h2>Hariana</h2>
+            <img src="hariana.png" alt="Hariana">
+            <p>First popularized in the Haryana districts of Rohtak, Hisar, Jind, and Gurgaon. Punjab, Uttar Pradesh, and certain areas of MP later adopted it. Small horns are present. The bullocks are strong laborers. Fair milkers, Hariana cows produce 600–800 kg of milk every lactation.</p>
+        </div>
+    </div>
+
+    <script>
+        function goBack() {
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+</html>

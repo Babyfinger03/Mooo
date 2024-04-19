@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mooo Games</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('cow5.png');
+            background-size: cover;
+            background-position: center;
+            color: #ffffff; /* Text color */
+        }
+
+        .logo {
+            font-size: 2em;
+            margin: 20px;
+            text-align: center;
+            color: #fff;
+        }
+
+        .cover {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .cover h1 {
+            font-size: 3em;
+        }
+
+        .go-back {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: #555; /* Button background color */
+            color: #fff; /* Button text color */
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <button class="go-back" onclick="goBack()">Go Back</button> <!-- Go Back button -->
+
+    <div class="logo">Mooo Games</div>
+
+    <div class="cover">
+        <h1>Game will be launched soon</h1>
+    </div>
+
+    <script>
+        function goBack() {
+            window.history.back(); // Go back to the previous page
+        }
+    </script>
+</body>
+</html>

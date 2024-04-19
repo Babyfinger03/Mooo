@@ -1,0 +1,176 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('cow5.png');
+  background-size: cover;
+  background-position: center;
+  color: #ffffff; /* Text color */
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background for the header */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo {
+  font-size: 1.5em;
+  color: #fff;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li input[type="text"] {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+}
+
+.content {
+  padding: 20px;
+  text-align: center;
+}
+
+.intro {
+  margin-bottom: 50px;
+}
+
+.intro h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.intro p {
+  font-size: 1.2em;
+  margin-bottom: 0;
+}
+
+.labels {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.label {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  background-color: #333; /* Background color for circular labels */
+  text-align: center;
+  line-height: 200px;
+  border-radius: 50%; /* Make it circular */
+  background-size: cover;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Added transition for transform property */
+  overflow: hidden; /* Hide overflow content */
+  position: relative; /* Position for absolute text */
+}
+
+.label span {
+  display: block;
+  font-size: 1.2em; /* Increase font size */
+  font-weight: bold; /* Make it bold */
+  color: #fff; /* Text color */
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background for text */
+  padding: 10px; /* Add padding to text */
+  border-radius: 10px; /* Rounded corners for text background */
+  position: absolute; /* Position text absolutely */
+  bottom: 10px; /* Position text at the bottom */
+  left: 50%; /* Center text horizontally */
+  transform: translateX(-50%); /* Center text horizontally */
+  opacity: 0; /* Hide text initially */
+  transition: opacity 0.3s ease; /* Added transition for opacity property */
+}
+
+.label:hover {
+  background-color: #555; /* Change background color on hover */
+  transform: scale(1.1); /* Scale up on hover */
+}
+
+.label:hover span {
+  opacity: 1; /* Show text on hover */
+}
+
+.cow1 {
+  background-image: url('cow1.png');
+}
+
+.cow2 {
+  background-image: url('cow2.png');
+}
+
+.cow3 {
+  background-image: url('cow3.png');
+}
+
+.cow4 {
+  background-image: url('cow4.png');
+}
+
+.did-you-know {
+  margin-top: 50px;
+  text-align: center;
+  animation: pulse 2s infinite alternate; /* Add pulse animation */
+}
+
+.did-you-know-title {
+  font-size: 2em;
+  margin-top: 0;
+  color: #fff; /* Text color */
+}
+
+.did-you-know-label {
+  background-color: #ffd700; /* Background color for rectangular label */
+  color: #333; /* Text color */
+  padding: 20px; /* Padding for the label */
+  border-radius: 20px; /* Rounded corners */
+  border: 4px solid #333; /* Bold border */
+  width: 400px; /* Width of the label */
+  height: 4cm; /* Height of the label */
+  margin: 0 auto; /* Center the box horizontally */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Box shadow for a creative border effect */
+  animation: shake 2s infinite; /* Add shake animation */
+}
+
+@keyframes pulse {
+  from {
+      transform: scale(1);
+  }
+  to {
+      transform: scale(1.1);
+  }
+}
+
+@keyframes shake {
+  0% {
+      transform: rotate(0deg);
+  }
+  25% {
+      transform: rotate(5deg);
+  }
+  50% {
+      transform: rotate(0deg);
+  }
+  75% {
+      transform: rotate(-5deg);
+  }
+  100% {
+      transform: rotate(0deg);
+  }
+}
